@@ -5,7 +5,7 @@ Spark version of FastLSH (frequency counting locality sensitive hashing)
 
     vim src/FastLSH.scala
 
-change parameters in line 37-46
+change parameters between line 37-46
 
     val D = 57 //# of dimensions
     val L = 200 //# of group hash
