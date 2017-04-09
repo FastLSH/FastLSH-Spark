@@ -19,7 +19,7 @@ change parameters between line 37-46
     val outputPath = "../testData/candidateSet.csv"
 
 ### Execution 
-Mark sure `Spark` is installed and `spark-shell` is in `PATH`, you can find install guide [here](here http://spark.apache.org/downloads.html)
+Mark sure `Spark` is installed and `spark-shell` is in `PATH`, you can find install guide [here](http://spark.apache.org/downloads.html) .
 
 `spark-shell -i ./src/FastLSH.scala`
 
