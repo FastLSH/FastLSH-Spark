@@ -1,3 +1,4 @@
+![FastLSH_LOGO](https://cloud.githubusercontent.com/assets/11495951/24863723/9f84929a-1e34-11e7-8689-d2151bc1aadd.png)
 # FastLSH-Spark
 Spark version of FastLSH (frequency counting locality sensitive hashing)
 
