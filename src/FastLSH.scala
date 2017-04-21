@@ -72,9 +72,7 @@ import java.io._
 
     //normalization the dataset
     var maxn = (0 until D).map(d=>datasetN.map(_(d)).max())
-    var maxq = (0 until D).map(d=>datasetQ.map(_(d)).max())
     var minn = (0 until D).map(d=>datasetN.map(_(d)).min())
-    var minq = (0 until D).map(d=>datasetQ.map(_(d)).min())
 
     //broadcast frequent used variable
     sc.broadcast(maxn)
@@ -85,7 +83,7 @@ import java.io._
 
     //Q is small set, collect it and then broadcast it
     var datasetQB = datasetQ.collect().toList
-    datasetQB = datasetQB.map(r=>(0 until D).map(d=> if((maxq(d)-minq(d))>0) (r(d)-minq(d))/(maxq(d)-minq(d)) else 0.5).toList)
+    datasetQB = datasetQB.map(r=>(0 until D).map(d=> if((maxn(d)-minn(d))>0) (r(d)-minn(d))/(maxn(d)-minn(d)) else 0.5).toList)
 
     //broadcast frequent used small and cache reused -- spark practice
     sc.broadcast(datasetQB)
