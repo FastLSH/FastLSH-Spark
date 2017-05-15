@@ -41,9 +41,9 @@ import java.io._
     val Q = 1000 //# of vertors in the queryset
     val W = 1.2 //bucket width
     val T = 100 // threshold
-    val setQPath = "../testData/dataset1000NoIndex.csv"
-    val setNPath = "../testData/dataset1000NoIndex.csv"
-    val outputPath = "../testData/candidateSet.csv"
+    val setQPath = "./testData/dataset1000NoIndex.csv"
+    val setNPath = "./testData/dataset1000NoIndex.csv"
+    val outputPath = "./testData/candidateSet.csv"
     val r = scala.util.Random
 
 
