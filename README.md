@@ -27,5 +27,6 @@ Mark sure `Spark` is installed and `spark-shell` is in `PATH`, you can find inst
 check the result in `./testData/candidateSet.csv` or the outputPath you set
 
 
-
+### Have a glimsp 
+![FastLSH_LOGO](https://cloud.githubusercontent.com/assets/11495951/26063431/9ee9ec2a-39c0-11e7-812f-bf19e1cca278.png)
 
